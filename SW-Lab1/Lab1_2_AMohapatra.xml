@@ -1,0 +1,15 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:vcard="http://www.w3.org/2001/vcard-rdf/3.0#">
+  <rdf:Description rdf:about="http://utdallas/semclass">
+    <vcard:TITLE>Computer Scientist</vcard:TITLE>
+    <vcard:EMAIL>mailto:timbl@w3.org</vcard:EMAIL>
+    <vcard:BDAY>1955 June 08</vcard:BDAY>
+    <vcard:N rdf:parseType="Resource">
+      <vcard:Family>Berners-Lee</vcard:Family>
+      <vcard:Given>Timothy John</vcard:Given>
+      <vcard:Prefix>Sir</vcard:Prefix>
+    </vcard:N>
+    <vcard:FN>Sir Timothy John Berners-Lee</vcard:FN>
+  </rdf:Description>
+</rdf:RDF>

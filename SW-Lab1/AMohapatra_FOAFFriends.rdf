@@ -1,0 +1,36 @@
+<rdf:RDF
+      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+      xmlns:foaf="http://xmlns.com/foaf/0.1/"
+      xmlns:admin="http://webns.net/mvcb/">
+<foaf:PersonalProfileDocument rdf:about="">
+  <foaf:maker rdf:resource="#me"/>
+  <foaf:primaryTopic rdf:resource="#me"/>
+  <admin:generatorAgent rdf:resource="http://www.ldodds.com/foaf/foaf-a-matic"/>
+  <admin:errorReportsTo rdf:resource="mailto:leigh@ldodds.com"/>
+</foaf:PersonalProfileDocument>
+<foaf:Person rdf:ID="me">
+<foaf:name>Ashish Mohapatra</foaf:name>
+<foaf:title>Mr</foaf:title>
+<foaf:givenname>Ashish</foaf:givenname>
+<foaf:family_name>Mohapatra</foaf:family_name>
+<foaf:mbox rdf:resource="mailto:xyz@gmail.com"/>
+<foaf:homepage rdf:resource="www.utdallas.com"/>
+<foaf:depiction rdf:resource="myPic.jpg"/>
+<foaf:phone rdf:resource="tel:4695558845"/>
+<foaf:workplaceHomepage rdf:resource="www.UTD.com"/>
+<foaf:workInfoHomepage rdf:resource="HelloUTD"/>
+<foaf:schoolHomepage rdf:resource="www.utdallas.edu"/>
+<foaf:knows>
+<foaf:Person>
+<foaf:name>Ashwin</foaf:name>
+<foaf:mbox rdf:resource="mailto:asw@gmail.com"/></foaf:Person></foaf:knows>
+<foaf:knows>
+<foaf:Person>
+<foaf:name>Koulick</foaf:name>
+<foaf:mbox rdf:resource="mailto:kou@utdallas.edu"/></foaf:Person></foaf:knows>
+<foaf:knows>
+<foaf:Person>
+<foaf:name>Akash</foaf:name>
+<foaf:mbox rdf:resource="mailto:akashd.india@gmail.com"/></foaf:Person></foaf:knows></foaf:Person>
+</rdf:RDF>

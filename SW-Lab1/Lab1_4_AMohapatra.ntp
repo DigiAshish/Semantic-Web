@@ -1,0 +1,37 @@
+<http://utdallas/semclass> <http://www.w3.org/2001/vcard-rdf/3.0#FN> "Sir Timothy John Berners-Lee" .
+<http://utdallas/semclass> <http://www.w3.org/2001/vcard-rdf/3.0#N> _:Bc0e06903X2D19fbX2D4118X2Da63fX2D30a9b63fa893 .
+<http://utdallas/semclass> <http://www.w3.org/2001/vcard-rdf/3.0#BDAY> "1955 June 08" .
+<http://utdallas/semclass> <http://www.w3.org/2001/vcard-rdf/3.0#EMAIL> "mailto:timbl@w3.org" .
+<http://utdallas/semclass> <http://www.w3.org/2001/vcard-rdf/3.0#TITLE> "Computer Scientist" .
+_:Bc0e06903X2D19fbX2D4118X2Da63fX2D30a9b63fa893 <http://www.w3.org/2001/vcard-rdf/3.0#Prefix> "Sir" .
+_:Bc0e06903X2D19fbX2D4118X2Da63fX2D30a9b63fa893 <http://www.w3.org/2001/vcard-rdf/3.0#Given> "Timothy John" .
+_:Bc0e06903X2D19fbX2D4118X2Da63fX2D30a9b63fa893 <http://www.w3.org/2001/vcard-rdf/3.0#Family> "Berners-Lee" .
+<file:///Users/AshishMAC/EclipseWorkspace/SW-Lab1/AMohapatra_FOAFFriends.rdf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/PersonalProfileDocument> .
+<file:///Users/AshishMAC/EclipseWorkspace/SW-Lab1/AMohapatra_FOAFFriends.rdf> <http://xmlns.com/foaf/0.1/maker> <file:///Users/AshishMAC/EclipseWorkspace/SW-Lab1/AMohapatra_FOAFFriends.rdf#me> .
+<file:///Users/AshishMAC/EclipseWorkspace/SW-Lab1/AMohapatra_FOAFFriends.rdf> <http://xmlns.com/foaf/0.1/primaryTopic> <file:///Users/AshishMAC/EclipseWorkspace/SW-Lab1/AMohapatra_FOAFFriends.rdf#me> .
+<file:///Users/AshishMAC/EclipseWorkspace/SW-Lab1/AMohapatra_FOAFFriends.rdf> <http://webns.net/mvcb/generatorAgent> <http://www.ldodds.com/foaf/foaf-a-matic> .
+<file:///Users/AshishMAC/EclipseWorkspace/SW-Lab1/AMohapatra_FOAFFriends.rdf> <http://webns.net/mvcb/errorReportsTo> <mailto:leigh@ldodds.com> .
+<file:///Users/AshishMAC/EclipseWorkspace/SW-Lab1/AMohapatra_FOAFFriends.rdf#me> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<file:///Users/AshishMAC/EclipseWorkspace/SW-Lab1/AMohapatra_FOAFFriends.rdf#me> <http://xmlns.com/foaf/0.1/name> "Ashish Mohapatra" .
+<file:///Users/AshishMAC/EclipseWorkspace/SW-Lab1/AMohapatra_FOAFFriends.rdf#me> <http://xmlns.com/foaf/0.1/title> "Mr" .
+<file:///Users/AshishMAC/EclipseWorkspace/SW-Lab1/AMohapatra_FOAFFriends.rdf#me> <http://xmlns.com/foaf/0.1/givenname> "Ashish" .
+<file:///Users/AshishMAC/EclipseWorkspace/SW-Lab1/AMohapatra_FOAFFriends.rdf#me> <http://xmlns.com/foaf/0.1/family_name> "Mohapatra" .
+<file:///Users/AshishMAC/EclipseWorkspace/SW-Lab1/AMohapatra_FOAFFriends.rdf#me> <http://xmlns.com/foaf/0.1/mbox> <mailto:xyz@gmail.com> .
+<file:///Users/AshishMAC/EclipseWorkspace/SW-Lab1/AMohapatra_FOAFFriends.rdf#me> <http://xmlns.com/foaf/0.1/homepage> <file:///Users/AshishMAC/EclipseWorkspace/SW-Lab1/www.utdallas.com> .
+<file:///Users/AshishMAC/EclipseWorkspace/SW-Lab1/AMohapatra_FOAFFriends.rdf#me> <http://xmlns.com/foaf/0.1/depiction> <file:///Users/AshishMAC/EclipseWorkspace/SW-Lab1/myPic.jpg> .
+<file:///Users/AshishMAC/EclipseWorkspace/SW-Lab1/AMohapatra_FOAFFriends.rdf#me> <http://xmlns.com/foaf/0.1/phone> <tel:4695558845> .
+<file:///Users/AshishMAC/EclipseWorkspace/SW-Lab1/AMohapatra_FOAFFriends.rdf#me> <http://xmlns.com/foaf/0.1/workplaceHomepage> <file:///Users/AshishMAC/EclipseWorkspace/SW-Lab1/www.UTD.com> .
+<file:///Users/AshishMAC/EclipseWorkspace/SW-Lab1/AMohapatra_FOAFFriends.rdf#me> <http://xmlns.com/foaf/0.1/workInfoHomepage> <file:///Users/AshishMAC/EclipseWorkspace/SW-Lab1/HelloUTD> .
+<file:///Users/AshishMAC/EclipseWorkspace/SW-Lab1/AMohapatra_FOAFFriends.rdf#me> <http://xmlns.com/foaf/0.1/schoolHomepage> <file:///Users/AshishMAC/EclipseWorkspace/SW-Lab1/www.utdallas.edu> .
+<file:///Users/AshishMAC/EclipseWorkspace/SW-Lab1/AMohapatra_FOAFFriends.rdf#me> <http://xmlns.com/foaf/0.1/knows> _:B2dbd4118X2Dfbc8X2D4d12X2Dbe86X2D6db94dbd8b6e .
+<file:///Users/AshishMAC/EclipseWorkspace/SW-Lab1/AMohapatra_FOAFFriends.rdf#me> <http://xmlns.com/foaf/0.1/knows> _:B121e5901X2D873cX2D4ab2X2Dabd8X2D4b78845d8c4a .
+<file:///Users/AshishMAC/EclipseWorkspace/SW-Lab1/AMohapatra_FOAFFriends.rdf#me> <http://xmlns.com/foaf/0.1/knows> _:Bde57684eX2D9ebbX2D4613X2D82a8X2Da9067c1d6134 .
+_:B2dbd4118X2Dfbc8X2D4d12X2Dbe86X2D6db94dbd8b6e <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:B2dbd4118X2Dfbc8X2D4d12X2Dbe86X2D6db94dbd8b6e <http://xmlns.com/foaf/0.1/name> "Ashwin" .
+_:B2dbd4118X2Dfbc8X2D4d12X2Dbe86X2D6db94dbd8b6e <http://xmlns.com/foaf/0.1/mbox> <mailto:asw@gmail.com> .
+_:B121e5901X2D873cX2D4ab2X2Dabd8X2D4b78845d8c4a <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:B121e5901X2D873cX2D4ab2X2Dabd8X2D4b78845d8c4a <http://xmlns.com/foaf/0.1/name> "Koulick" .
+_:B121e5901X2D873cX2D4ab2X2Dabd8X2D4b78845d8c4a <http://xmlns.com/foaf/0.1/mbox> <mailto:kou@utdallas.edu> .
+_:Bde57684eX2D9ebbX2D4613X2D82a8X2Da9067c1d6134 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:Bde57684eX2D9ebbX2D4613X2D82a8X2Da9067c1d6134 <http://xmlns.com/foaf/0.1/name> "Akash" .
+_:Bde57684eX2D9ebbX2D4613X2D82a8X2Da9067c1d6134 <http://xmlns.com/foaf/0.1/mbox> <mailto:akashd.india@gmail.com> .

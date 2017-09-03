@@ -1,0 +1,8 @@
+<http://utdallas/semclass> <http://www.w3.org/2001/vcard-rdf/3.0#TITLE> "Computer Scientist" .
+<http://utdallas/semclass> <http://www.w3.org/2001/vcard-rdf/3.0#EMAIL> "mailto:timbl@w3.org" .
+<http://utdallas/semclass> <http://www.w3.org/2001/vcard-rdf/3.0#BDAY> "1955 June 08" .
+<http://utdallas/semclass> <http://www.w3.org/2001/vcard-rdf/3.0#N> _:B68a79f6eX2D7b20X2D43feX2D8072X2Dde1368d5e624 .
+<http://utdallas/semclass> <http://www.w3.org/2001/vcard-rdf/3.0#FN> "Sir Timothy John Berners-Lee" .
+_:B68a79f6eX2D7b20X2D43feX2D8072X2Dde1368d5e624 <http://www.w3.org/2001/vcard-rdf/3.0#Family> "Berners-Lee" .
+_:B68a79f6eX2D7b20X2D43feX2D8072X2Dde1368d5e624 <http://www.w3.org/2001/vcard-rdf/3.0#Given> "Timothy John" .
+_:B68a79f6eX2D7b20X2D43feX2D8072X2Dde1368d5e624 <http://www.w3.org/2001/vcard-rdf/3.0#Prefix> "Sir" .

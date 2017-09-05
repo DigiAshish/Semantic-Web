@@ -6,7 +6,7 @@ import org.apache.jena.util.FileManager;
 import java.io.*;
 
 
-public class lab1_4_AMohapatra {
+public class lab1_4d {
 	public static void main(final String[] args) {
 		org.apache.log4j.Logger.getRootLogger().setLevel(org.apache.log4j.Level.OFF);	
 		Dataset dataset=TDBFactory.createDataset("MyDatabases/Dataset1");

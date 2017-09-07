@@ -11,22 +11,12 @@ import org.apache.jena.vocabulary.DC;
 import org.apache.jena.vocabulary.RDF;
 import org.apache.jena.vocabulary.VCARD;
 
-/**
- * Persist the graph in Jena using Dublin Core and TDB
- *
- * @author Ekal.Golas
- */
 public class Lab_2 {
-	/**
-	 * @param args
-	 *            Command line arguments
-	 */
-	@SuppressWarnings("unused")
-	public static void main(final String[] args) {
-		org.apache.log4j.Logger.getRootLogger()
-			.setLevel(org.apache.log4j.Level.OFF);
 
-		// Some definitions
+	public static void main(final String[] args) {
+		org.apache.log4j.Logger.getRootLogger().setLevel(org.apache.log4j.Level.OFF);
+
+
 		final String URI = "http://utdallas/semclass#";
 		final String movieURI = URI + "Movie-";
 		final String personURI = URI + "Person-";
@@ -34,7 +24,7 @@ public class Lab_2 {
 		final String directorTitle = "director";
 		final String authorTitle = "author";
 
-		// Define Stanley Kubrick
+
 		final String kubrickURI = personURI + "StanleyKubrick";
 		final String kubrickGiven = "Stanley";
 		final String kubrickFamily = "Kubrick";

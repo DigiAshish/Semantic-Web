@@ -1,21 +1,14 @@
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
-import org.apache.jena.query.Dataset;
-import org.apache.jena.query.ReadWrite;
-import org.apache.jena.rdf.model.Model;
-import org.apache.jena.rdf.model.ModelFactory;
-import org.apache.jena.rdf.model.Property;
-import org.apache.jena.rdf.model.Resource;
+import java.io.*;
+import org.apache.jena.query.*;
+import org.apache.jena.rdf.model.*;
 import org.apache.jena.tdb.TDBFactory;
-import org.apache.jena.vocabulary.DC;
-import org.apache.jena.vocabulary.RDF;
-import org.apache.jena.vocabulary.VCARD;
+import org.apache.jena.vocabulary.*;
 
 public class Lab_2 {
 
 	public static void main( String[] args) {
 		
+	org.apache.log4j.Logger.getRootLogger().setLevel(org.apache.log4j.Level.OFF);
 
 		File file = new File("MyDatabases/Dataset1");      
 		   String[] myFiles;    
@@ -26,8 +19,6 @@ public class Lab_2 {
 		               myFile.delete();
 		           }
 		        }
-		       
-		org.apache.log4j.Logger.getRootLogger().setLevel(org.apache.log4j.Level.OFF);
 
 
 		 String URI = "http://utdallas/semclass#";

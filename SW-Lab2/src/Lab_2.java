@@ -125,7 +125,8 @@ public class Lab_2 {
 			WriteAsXML.close();
 			WriteAsN3.close();
 			
-		} catch ( IOException e) {
+		} catch ( IOException e) 
+		{
 			e.printStackTrace();
 			dataset.end();
 			model.close();

@@ -27,6 +27,7 @@ public class Lab_2 {
 		 String bookURI = URI + "Book-";
 		 String directorTitle = "director";
 		 String authorTitle = "author";
+		 String AdaptationOf = "AdaptationOf";
 
 		 String DirectorURI = personURI + "StanleyKubrick";
 		 String DirectorGiven = "Stanley";
@@ -55,14 +56,13 @@ public class Lab_2 {
 		 Dataset dataset = TDBFactory.createDataset(directory + "Dataset1");
 
 		 Model model = ModelFactory.createDefaultModel();
+		 
+		 Property directorProperty = model.createProperty(movieURI, directorTitle);
+		 Property adaptationOfProperty = model.createProperty(movieURI, AdaptationOf );
 
 		 Resource movie = model.createResource(movieURI);
 		 Resource person = model.createResource(personURI);
 		 Resource book = model.createResource(bookURI);
-
-		 Property directorProperty = model.createProperty(movieURI, directorTitle);
-		 Property adaptationOfProperty = model.createProperty(movieURI, "AdaptationOf");
-
 
 		 Resource kubrick = model.createResource(DirectorURI)
 			.addProperty(RDF.type, person)

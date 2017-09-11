@@ -1,6 +1,6 @@
+import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
-
 import org.apache.jena.query.Dataset;
 import org.apache.jena.query.ReadWrite;
 import org.apache.jena.rdf.model.Model;
@@ -11,128 +11,126 @@ import org.apache.jena.vocabulary.DC;
 import org.apache.jena.vocabulary.RDF;
 import org.apache.jena.vocabulary.VCARD;
 
-/**
- * Persist the graph in Jena using Dublin Core and TDB
- *
- * @author Ekal.Golas
- */
 public class Lab_2 {
-	/**
-	 * @param args
-	 *            Command line arguments
-	 */
-	@SuppressWarnings("unused")
-	public static void main(final String[] args) {
-		org.apache.log4j.Logger.getRootLogger()
-			.setLevel(org.apache.log4j.Level.OFF);
 
-		// Some definitions
-		final String URI = "http://utdallas/semclass#";
-		final String movieURI = URI + "Movie-";
-		final String personURI = URI + "Person-";
-		final String bookURI = URI + "Book-";
-		final String directorTitle = "director";
-		final String authorTitle = "author";
+	public static void main( String[] args) {
+		
 
-		// Define Stanley Kubrick
-		final String kubrickURI = personURI + "StanleyKubrick";
-		final String kubrickGiven = "Stanley";
-		final String kubrickFamily = "Kubrick";
-		final String kubrickFullName = kubrickGiven + " " + kubrickFamily;
+		File file = new File("MyDatabases/Dataset1");      
+		   String[] myFiles;    
+		       if(file.isDirectory()){
+		           myFiles = file.list();
+		           for (int i=0; i<myFiles.length; i++) {
+		               File myFile = new File(file, myFiles[i]); 
+		               myFile.delete();
+		           }
+		        }
+		       
+		org.apache.log4j.Logger.getRootLogger().setLevel(org.apache.log4j.Level.OFF);
 
-		// Define Author
-		final String georgeURI = personURI + "PeterGeorge";
-		final String georgeGiven = "Peter";
-		final String georgeFamily = "George";
-		final String georgeFullName = georgeGiven + " " + georgeFamily;
 
-		// Define Red Alert
-		final String redAlertURI = bookURI + "redAlert";
-		final String redAlertTitle = "Red Alert";
+		 String URI = "http://utdallas/semclass#";
+		 String movieURI = URI + "Movie-";
+		 String personURI = URI + "Person-";
+		 String bookURI = URI + "Book-";
+		 String directorTitle = "director";
+		 String authorTitle = "author";
 
-		// Define Dr. Strangelove
-		final String strangeloveURI = movieURI + "DrStrangelove";
-		final String strangeloveTitle = "Dr. Strangelove";
-		final String strangeloveYear = "1964";
+		 String DirectorURI = personURI + "StanleyKubrick";
+		 String DirectorGiven = "Stanley";
+		 String DirectorFamily = "Kubrick";
+		 String DirectorFullName = DirectorGiven + " " + DirectorFamily;
 
-		// Define A Clockwork Orange
-		final String clockworkURI = movieURI + "AClockworkOrange";
-		final String clockworkTitle = "A Clockwork Orange";
-		final String clockworkYear = "1971";
+		 String DrStrangeLoveURI = movieURI + "DrStrangelove";
+		 String DrStrangeLoveTitle = "Dr. Strangelove";
+		 String DrStrangeLoveYear = "1964";
 
-		// Make a TDB-backed dataset
-		final String directory = "MyDatabases/";
-		final Dataset dataset = TDBFactory.createDataset(directory + "Dataset1");
+		 String AClockworkOrangeURI = movieURI + "AClockworkOrange";
+		 String AClockworkOrangeTitle = "A Clockwork Orange";
+		 String AClockworkOrangeYear = "1971";
+		 
+		 String AuthorURI = personURI + "PeterGeorge";
+		 String AuthorGiven = "Peter";
+		 String AuthorFamily = "George";
+		 String AuthorFullName = AuthorGiven + " " + AuthorFamily;
 
-		// create an empty Model
-		final Model model = dataset.getNamedModel("myrdf");
+		 String redAlertURI = bookURI + "redAlert";
+		 String redAlertTitle = "Red Alert";
+		 String redAlertYear = "1958";
 
-		// Create classes
-		final Resource movie = model.createResource(movieURI);
-		final Resource person = model.createResource(personURI);
-		final Resource book = model.createResource(bookURI);
 
-		// Create custom properties
-		final Property directorProperty = model.createProperty(movieURI, directorTitle);
-		final Property adaptationOfProperty = model.createProperty(movieURI, "AdaptationOf");
+		 String directory = "MyDatabases/";
+		 Dataset dataset = TDBFactory.createDataset(directory + "Dataset1");
 
-		// Create the director
-		// and add the properties cascading style
-		final Resource kubrick = model.createResource(kubrickURI)
+		 Model model = dataset.getNamedModel("myrdf");
+
+		 Resource movie = model.createResource(movieURI);
+		 Resource person = model.createResource(personURI);
+		 Resource book = model.createResource(bookURI);
+
+		 Property directorProperty = model.createProperty(movieURI, directorTitle);
+		 Property adaptationOfProperty = model.createProperty(movieURI, "AdaptationOf");
+
+
+		 Resource kubrick = model.createResource(DirectorURI)
 			.addProperty(RDF.type, person)
-			.addProperty(VCARD.FN, kubrickFullName)
+			.addProperty(VCARD.FN, DirectorFullName)
 			.addProperty(VCARD.N, model.createResource()
-				.addProperty(VCARD.Given, kubrickGiven)
-				.addProperty(VCARD.Family, kubrickFamily))
+				.addProperty(VCARD.Given, DirectorGiven)
+				.addProperty(VCARD.Family, DirectorFamily))
 			.addProperty(VCARD.TITLE, directorTitle);
 
-		// Create the author
-		final Resource george = model.createResource(georgeURI)
+
+		 Resource george = model.createResource(AuthorURI)
 			.addProperty(RDF.type, person)
-			.addProperty(VCARD.FN, georgeFullName)
+			.addProperty(VCARD.FN, AuthorFullName)
 			.addProperty(VCARD.N, model.createResource()
-				.addProperty(VCARD.Given, georgeGiven)
-				.addProperty(VCARD.Family, georgeFamily))
+				.addProperty(VCARD.Given, AuthorGiven)
+				.addProperty(VCARD.Family, AuthorFamily))
 			.addProperty(VCARD.TITLE, authorTitle);
 
-		// Create book
-		final Resource redAlert = model.createResource(redAlertURI)
+
+		 Resource redAlert = model.createResource(redAlertURI)
 			.addProperty(RDF.type, book)
 			.addProperty(DC.creator, george)
-			.addProperty(DC.title, redAlertTitle);
+			.addProperty(DC.title, redAlertTitle)
+		    .addProperty(DC.date, redAlertYear);
 
-		// Create movies
-		final Resource clockwork = model.createResource(clockworkURI)
+
+		 Resource AClockworkOrange = model.createResource(AClockworkOrangeURI)
 			.addProperty(RDF.type, movie)
-			.addProperty(DC.title, clockworkTitle)
-			.addProperty(DC.date, clockworkYear)
+			.addProperty(DC.title, AClockworkOrangeTitle)
+			.addProperty(DC.date, AClockworkOrangeYear)
 			.addProperty(directorProperty, kubrick)
 			.addProperty(adaptationOfProperty, redAlert);
 
-		final Resource strangelove = model.createResource(strangeloveURI)
+		 Resource DrStrangeLove = model.createResource(DrStrangeLoveURI)
 			.addProperty(RDF.type, movie)
-			.addProperty(DC.title, strangeloveTitle)
-			.addProperty(DC.date, strangeloveYear)
+			.addProperty(DC.title, DrStrangeLoveTitle)
+			.addProperty(DC.date, DrStrangeLoveYear)
 			.addProperty(directorProperty, kubrick)
 			.addProperty(adaptationOfProperty, redAlert);
 
 		dataset.begin(ReadWrite.WRITE);
+		
 		try {
 			dataset.commit();
 
-			// Write model to different formats
-			final FileWriter xmlWriter = new FileWriter("Lab2_3_EkalGolas.xml");
-			final FileWriter n3Writer = new FileWriter("Lab2_3_EkalGolas.n3");
+			 FileWriter WriteAsXML = new FileWriter("Lab2_3_AMohapatra.xml");
+			 FileWriter WriteAsN3 = new FileWriter("Lab2_3_AMohapatra.n3");
 
-			model.write(xmlWriter, "RDF/XML");
-			model.write(n3Writer, "N3");
+			model.write(WriteAsXML, "RDF/XML");
+			model.write(WriteAsN3, "N3");
 
-			xmlWriter.close();
-			n3Writer.close();
-		} catch (final IOException e) {
+			WriteAsXML.close();
+			WriteAsN3.close();
+			
+		} catch ( IOException e) {
 			e.printStackTrace();
 			dataset.end();
 			model.close();
 		}
+		
+		
 	}
 }

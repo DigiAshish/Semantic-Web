@@ -4,39 +4,39 @@
     xmlns:vcard="http://www.w3.org/2001/vcard-rdf/3.0#"
     xmlns:j.0="http://utdallas/semclass#">
   <j.0:Movie- rdf:about="http://utdallas/semclass#Movie-AClockworkOrange">
-    <dc:title>A Clockwork Orange</dc:title>
-    <dc:date>1971</dc:date>
-    <j.0:Movie-director>
-      <j.0:Person- rdf:about="http://utdallas/semclass#Person-StanleyKubrick">
-        <vcard:FN>Stanley Kubrick</vcard:FN>
-        <vcard:N rdf:parseType="Resource">
-          <vcard:Given>Stanley</vcard:Given>
-          <vcard:Family>Kubrick</vcard:Family>
-        </vcard:N>
-        <vcard:TITLE>director</vcard:TITLE>
-      </j.0:Person->
-    </j.0:Movie-director>
     <j.0:Movie-AdaptationOf>
       <j.0:Book- rdf:about="http://utdallas/semclass#Book-redAlert">
+        <dc:date>1958</dc:date>
+        <dc:title>Red Alert</dc:title>
         <dc:creator>
           <j.0:Person- rdf:about="http://utdallas/semclass#Person-PeterGeorge">
-            <vcard:FN>Peter George</vcard:FN>
-            <vcard:N rdf:parseType="Resource">
-              <vcard:Given>Peter</vcard:Given>
-              <vcard:Family>George</vcard:Family>
-            </vcard:N>
             <vcard:TITLE>author</vcard:TITLE>
+            <vcard:N rdf:parseType="Resource">
+              <vcard:Family>George</vcard:Family>
+              <vcard:Given>Peter</vcard:Given>
+            </vcard:N>
+            <vcard:FN>Peter George</vcard:FN>
           </j.0:Person->
         </dc:creator>
-        <dc:title>Red Alert</dc:title>
-        <dc:date>1958</dc:date>
       </j.0:Book->
     </j.0:Movie-AdaptationOf>
+    <j.0:Movie-director>
+      <j.0:Person- rdf:about="http://utdallas/semclass#Person-StanleyKubrick">
+        <vcard:TITLE>director</vcard:TITLE>
+        <vcard:N rdf:parseType="Resource">
+          <vcard:Family>Kubrick</vcard:Family>
+          <vcard:Given>Stanley</vcard:Given>
+        </vcard:N>
+        <vcard:FN>Stanley Kubrick</vcard:FN>
+      </j.0:Person->
+    </j.0:Movie-director>
+    <dc:date>1971</dc:date>
+    <dc:title>A Clockwork Orange</dc:title>
   </j.0:Movie->
   <j.0:Movie- rdf:about="http://utdallas/semclass#Movie-DrStrangelove">
-    <dc:title>Dr. Strangelove</dc:title>
-    <dc:date>1964</dc:date>
-    <j.0:Movie-director rdf:resource="http://utdallas/semclass#Person-StanleyKubrick"/>
     <j.0:Movie-AdaptationOf rdf:resource="http://utdallas/semclass#Book-redAlert"/>
+    <j.0:Movie-director rdf:resource="http://utdallas/semclass#Person-StanleyKubrick"/>
+    <dc:date>1964</dc:date>
+    <dc:title>Dr. Strangelove</dc:title>
   </j.0:Movie->
 </rdf:RDF>

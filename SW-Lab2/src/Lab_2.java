@@ -4,6 +4,7 @@ import java.io.IOException;
 import org.apache.jena.query.Dataset;
 import org.apache.jena.query.ReadWrite;
 import org.apache.jena.rdf.model.Model;
+import org.apache.jena.rdf.model.ModelFactory;
 import org.apache.jena.rdf.model.Property;
 import org.apache.jena.rdf.model.Resource;
 import org.apache.jena.tdb.TDBFactory;
@@ -62,7 +63,7 @@ public class Lab_2 {
 		 String directory = "MyDatabases/";
 		 Dataset dataset = TDBFactory.createDataset(directory + "Dataset1");
 
-		 Model model = dataset.getNamedModel("myrdf");
+		 Model model = ModelFactory.createDefaultModel();
 
 		 Resource movie = model.createResource(movieURI);
 		 Resource person = model.createResource(personURI);

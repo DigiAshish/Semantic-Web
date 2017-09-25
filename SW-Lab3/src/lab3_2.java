@@ -22,7 +22,8 @@ public class lab3_2 {
 		               myFile.delete();
 		           }
 		        }
-		       
+		     
+		
 		String directory = "MyDatabases/";
 		Dataset dataset = TDBFactory.createDataset(directory + "Dataset1");
 

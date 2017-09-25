@@ -30,7 +30,7 @@ public class lab3_2 {
 		//Model model = ModelFactory.createDefaultModel();
 
 		double start = System.currentTimeMillis();
-		String file = "Monterey.rdf";
+		String file = "Monterey_new.rdf";
 		//model.read("Monterey.rdf", "RDFXML") ;
 		FileManager.get().readModel(model, file);
 		double end = System.currentTimeMillis();
@@ -42,7 +42,7 @@ public class lab3_2 {
 		dataset.begin(ReadWrite.READ);
 		
 		try {
-			String queryString = "SELECT ?p ?o WHERE { <urn:monterey:#incident1> ?p ?o }";
+			String queryString = "SELECT ?p ?o WHERE { <http://urn.monterey.org/incidents#incident1> ?p ?o }";
 			//String queryString = "SELECT ?p ?o WHERE { <urn:monterey:#incident1> ?p ?o . }";
 			Query query = QueryFactory.create(queryString);
 

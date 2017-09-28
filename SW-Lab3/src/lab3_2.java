@@ -30,7 +30,7 @@ public class lab3_2 {
 		Model model = dataset.getDefaultModel();
 
 		double start = System.currentTimeMillis();
-		String file = "Monterey1.rdf";
+		String file = "Monterey.rdf";
 		FileManager.get().readModel(model, file);
 		double end = System.currentTimeMillis();
 
